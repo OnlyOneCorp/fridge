@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>냉장고 사전 — 음식 보관법·유통기한 3초 검색 | Fridge Dictionary</title>
+<meta name="description" content="이거 아직 먹어도 되나? 음식 125종의 보관법, 유통기한·소비기한, 상했는지 확인법, 냉동 보관 기간을 3초 만에 검색하세요.">
+<link rel="canonical" href="https://fridge.onlyonecorpceo.workers.dev/">
+<meta property="og:title" content="냉장고 사전 — 음식 보관법·유통기한 3초 검색">
+<meta property="og:description" content="음식 125종 × 보관법·유통기한·상함 신호·냉동법 = 500페이지 냉장고 백과사전">
+<meta property="og:url" content="https://fridge.onlyonecorpceo.workers.dev/">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧊</text></svg>">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<script>
+// ---- GA4 Consent Mode v2 (default deny) ----
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});
+var CONFIG = { GA_ID: 'G-XXXXXXXXXX', COUPANG_URL: 'https://link.coupang.com/a/XXXXX' };
+(function(){
+  var s=document.createElement('script');s.async=true;
+  s.src='https://www.googletagmanager.com/gtag/js?id='+CONFIG.GA_ID;
+  document.head.appendChild(s);
+  gtag('js',new Date());gtag('config',CONFIG.GA_ID);
+})();
+function grantConsent(){gtag('consent','update',{analytics_storage:'granted'});try{localStorage.setItem('oo_consent','granted');}catch(e){}}
+</script>
+<style>
+:root{--bg:#FAFAF8;--ink:#3D4248;--accent:#B5342E;--line:#E8E6E1;--soft:#6B7178;--ok:#2E7D52;--warn:#B8860B;--card:#FFFFFF;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px;}
+header{padding:28px 0 8px;}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px;}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:15px;color:var(--ink);text-decoration:none;}
+.logo svg{flex:none;}
+.top-actions{display:flex;gap:8px;align-items:center;}
+.pill{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600;color:var(--ink);text-decoration:none;cursor:pointer;}
+.pill:hover{border-color:var(--ink);}
+h1{font-size:clamp(26px,5vw,38px);font-weight:800;letter-spacing:-.5px;line-height:1.25;}
+h1 .hl{color:var(--accent);}
+.sub{color:var(--soft);margin-top:10px;font-size:15px;}
+.searchbox{margin:26px 0 14px;position:relative;}
+.searchbox input{width:100%;padding:16px 20px 16px 48px;font-size:16px;border:1.5px solid var(--line);border-radius:14px;background:#fff;color:var(--ink);outline:none;font-family:inherit;}
+.searchbox input:focus{border-color:var(--accent);}
+.searchbox svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px;}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 14px;font-size:13.5px;font-weight:600;cursor:pointer;color:var(--soft);}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink);}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;padding-bottom:30px;}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;text-decoration:none;color:var(--ink);display:block;transition:transform .08s,border-color .08s;}
+.card:hover{transform:translateY(-2px);border-color:var(--accent);}
+.card .e{font-size:26px;}
+.card .n{font-weight:800;font-size:15.5px;margin-top:6px;}
+.card .d{font-size:12.5px;color:var(--soft);margin-top:3px;}
+.card .d b{color:var(--accent);font-weight:700;}
+.empty{color:var(--soft);text-align:center;padding:40px 0;display:none;}
+.notice{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 18px;font-size:12.5px;color:var(--soft);margin:8px 0 26px;}
+footer{border-top:1px solid var(--line);padding:26px 0 40px;color:var(--soft);font-size:12.5px;}
+footer a{color:var(--soft);}
+.consent{position:fixed;left:16px;right:16px;bottom:16px;max-width:520px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 8px 30px rgba(0,0,0,.12);display:none;z-index:50;font-size:13.5px;}
+.consent .btns{display:flex;gap:8px;margin-top:12px;}
+.consent button{flex:1;padding:10px;border-radius:10px;border:1px solid var(--line);background:#fff;font-weight:700;cursor:pointer;font-family:inherit;}
+.consent button.yes{background:var(--ink);color:#fff;border-color:var(--ink);}
+@media(max-width:520px){.grid{grid-template-columns:repeat(2,1fr);}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="topbar">
+    <a class="logo" href="https://main.onlyonecorpceo.workers.dev" title="OnlyOne">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6.5" stroke="#3D4248" stroke-width="2.2"/><path d="M15.5 15.5L21 21" stroke="#B5342E" stroke-width="2.6" stroke-linecap="round"/></svg>
+      OnlyOne
+    </a>
+    <div class="top-actions">
+      <button class="pill" id="langBtn" onclick="toggleLang()">EN</button>
+      <a class="pill" href="https://main.onlyonecorpceo.workers.dev">← Hub</a>
+    </div>
+  </div>
+  <h1><span data-ko="이거 아직 <span class='hl'>먹어도 되나</span>?" data-en="Is this <span class='hl'>still good</span>?">이거 아직 <span class="hl">먹어도 되나</span>?</span></h1>
+  <p class="sub" data-ko="음식 125종의 보관법 · 유통기한 · 상한 신호 · 냉동법을 3초 만에." data-en="Storage, shelf life, spoilage signs & freezing for 125 foods — in 3 seconds.">음식 125종의 보관법 · 유통기한 · 상한 신호 · 냉동법을 3초 만에.</p>
+</header>
+
+<main class="wrap">
+  <div class="searchbox">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6.5" stroke="#6B7178" stroke-width="2"/><path d="M15.5 15.5L21 21" stroke="#6B7178" stroke-width="2" stroke-linecap="round"/></svg>
+    <input id="q" type="search" placeholder="양파, 우유, 삼겹살, 밥…" autocomplete="off">
+  </div>
+  <div class="chips" id="chips"></div>
+  <div class="grid" id="grid"></div>
+  <p class="empty" id="empty" data-ko="검색 결과가 없어요 🥲" data-en="No results 🥲">검색 결과가 없어요 🥲</p>
+  <div class="notice">
+    <span data-ko="본 콘텐츠는 일반적인 보관 정보이며, 실제 상태·라벨 표기가 우선합니다. 이 사이트는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다." data-en="General storage guidance only — actual condition and package labels take priority. As an Amazon Associate, this site earns from qualifying purchases.">본 콘텐츠는 일반적인 보관 정보이며, 실제 상태·라벨 표기가 우선합니다. 이 사이트는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</span>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>냉장고 사전 · Fridge Dictionary — <span data-ko="For a Happy Day" data-en="For a Happy Day">For a Happy Day</span></div>
+    <div style="margin-top:6px;">© OnlyOne · <a href="mailto:onlyonecorpceo@gmail.com">onlyonecorpceo@gmail.com</a> · <a href="https://main.onlyonecorpceo.workers.dev">main.onlyonecorpceo.workers.dev</a></div>
+  </div>
+</footer>
+
+<div class="consent" id="consent">
+  <div data-ko="더 나은 서비스를 위해 익명 방문 통계를 수집해도 될까요?" data-en="May we collect anonymous visit statistics to improve this service?">더 나은 서비스를 위해 익명 방문 통계를 수집해도 될까요?</div>
+  <div class="btns">
+    <button class="yes" onclick="consentYes()" data-ko="동의" data-en="Accept">동의</button>
+    <button onclick="consentNo()" data-ko="거절" data-en="Decline">거절</button>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script>
+var CATS = [
+  {k:'all',  ko:'전체', en:'All'},
+  {k:'veg',  ko:'🥬 채소', en:'🥬 Veg'},
+  {k:'fruit',ko:'🍎 과일', en:'🍎 Fruit'},
+  {k:'meat', ko:'🥩 육류', en:'🥩 Meat'},
+  {k:'seafood',ko:'🐟 수산물', en:'🐟 Seafood'},
+  {k:'dairy',ko:'🥛 유제품·계란', en:'🥛 Dairy & Eggs'},
+  {k:'grain',ko:'🍞 곡물·면·빵', en:'🍞 Grains & Bread'},
+  {k:'sauce',ko:'🧂 소스·양념', en:'🧂 Sauces'},
+  {k:'cooked',ko:'🍲 반찬·요리', en:'🍲 Cooked'},
+  {k:'drink',ko:'🥤 음료', en:'🥤 Drinks'}
+];
+var UNITS = {h:['시간','hr'],d:['일','d'],w:['주','wk'],M:['개월','mo'],y:['년','yr']};
+var lang = 'ko';
+try { lang = localStorage.getItem('oo_lang') || 'ko'; } catch(e){}
+var cat = 'all', query = '';
+
+function fmtDur(v){
+  var i = lang==='ko'?0:1;
+  if(v===null) return lang==='ko'?'비권장':'skip';
+  if(v==='inf') return lang==='ko'?'무기한':'forever';
+  var u = UNITS[v[2]][i];
+  return v[1]?(v[0]+'~'+v[1]+u):(v[0]+u);
+}
+function bestBadge(f){
+  // 가장 대표적인 보관 기간 하나: 냉장 > 실온 > 냉동 순
+  if(f.fr) return (lang==='ko'?'냉장 ':'Fridge ')+'<b>'+fmtDur(f.fr)+'</b>';
+  if(f.rt) return (lang==='ko'?'실온 ':'Pantry ')+'<b>'+fmtDur(f.rt)+'</b>';
+  if(f.fz) return (lang==='ko'?'냉동 ':'Freezer ')+'<b>'+fmtDur(f.fz)+'</b>';
+  return '';
+}
+function renderChips(){
+  var h='';
+  CATS.forEach(function(c){
+    h+='<button class="chip'+(cat===c.k?' on':'')+'" onclick="setCat(\''+c.k+'\')">'+(lang==='ko'?c.ko:c.en)+'</button>';
+  });
+  document.getElementById('chips').innerHTML=h;
+}
+function setCat(k){cat=k;renderChips();renderGrid();}
+function renderGrid(){
+  var q=query.trim().toLowerCase(), h='', n=0;
+  FOODS.forEach(function(f){
+    if(cat!=='all'&&f.g!==cat)return;
+    if(q&&f.ko.toLowerCase().indexOf(q)<0&&f.en.toLowerCase().indexOf(q)<0&&f.id.indexOf(q)<0)return;
+    n++;
+    h+='<a class="card" href="/보관/'+encodeURIComponent(f.id)+'/">'
+      +'<div class="e">'+f.e+'</div>'
+      +'<div class="n">'+(lang==='ko'?f.ko:f.en)+'</div>'
+      +'<div class="d">'+bestBadge(f)+'</div></a>';
+  });
+  document.getElementById('grid').innerHTML=h;
+  document.getElementById('empty').style.display=n?'none':'block';
+}
+function applyLang(){
+  document.querySelectorAll('[data-ko]').forEach(function(el){
+    el.innerHTML = lang==='ko'?el.getAttribute('data-ko'):el.getAttribute('data-en');
+  });
+  document.getElementById('langBtn').textContent = lang==='ko'?'EN':'한국어';
+  document.documentElement.lang = lang;
+  renderChips(); renderGrid();
+}
+function toggleLang(){
+  lang = lang==='ko'?'en':'ko';
+  try{localStorage.setItem('oo_lang',lang);}catch(e){}
+  applyLang();
+}
+document.getElementById('q').addEventListener('input',function(e){query=e.target.value;renderGrid();});
+
+// ---- consent banner ----
+function isEEA(){
+  try{
+    var tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';
+    return tz.indexOf('Europe/')===0;
+  }catch(e){return false;}
+}
+function consentYes(){grantConsent();document.getElementById('consent').style.display='none';}
+function consentNo(){try{localStorage.setItem('oo_consent','denied');}catch(e){}document.getElementById('consent').style.display='none';}
+(function(){
+  var saved=null;try{saved=localStorage.getItem('oo_consent');}catch(e){}
+  if(saved==='granted'){grantConsent();return;}
+  if(saved==='denied')return;
+  if(isEEA()){document.getElementById('consent').style.display='block';}
+  else{grantConsent();}
+})();
+applyLang();
+</script>
+</body>
+</html>
