@@ -6,8 +6,8 @@ const path = require("path");
 const FOODS = require("./data.js");
 
 const SITE = "https://fridge.onlyonecorpceo.workers.dev";
-const GA_ID = "G-XXXXXXXXXX";
-const COUPANG_URL = "https://link.coupang.com/a/XXXXX";
+const GA_ID = "G-MN64DEBD1B";
+const COUPANG_URL = "https://link.coupang.com/a/fqedlbpwg8";
 const AMAZON_URL = "https://www.amazon.com/s?k=food+storage+containers&tag=onlyone0c-20";
 const HUB = "https://main.onlyonecorpceo.workers.dev";
 
